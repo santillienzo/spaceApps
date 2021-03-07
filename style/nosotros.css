@@ -1,0 +1,119 @@
+.about_us-container{
+    position: relative;
+    height: 100vh;
+    background: rgb(0,0,0);
+    background: linear-gradient(255deg, rgba(0,0,0,1) 0%, rgba(51,51,51,1) 97%);
+    box-shadow: 25px 0 25px 1px #333;
+}
+
+/***************** SOBRE NOSOTROS **************************/
+.about_us{
+    position: absolute;
+    background-color: #ccc;
+    width: 25%;
+    padding: 15px;
+    left: 75px;
+    top: -4px;
+    border-radius: 0 0 35px 35px;
+    box-shadow: 0 0 8px 1px #222;
+}
+
+
+.about_us h4{
+    font-family: 'Poppins', sans-serif;
+    text-align: center;
+    margin-bottom: 15px;
+}
+
+.about_us p::first-letter{
+    font-size: 23px;
+}
+.about_us p{
+    width: 90%;
+    margin: auto;
+    line-height: 25px;
+}
+
+.about_us p span{
+    color: #5B0519;
+    text-decoration: underline;
+}
+
+.about_us-img{
+    text-align: center;
+    margin-top: 15px;
+}
+
+.about_us-img img{
+    width: 100px;
+    text-align: center;
+    border-radius: 50px;
+}
+
+/*****************************/
+
+.why{
+    position: absolute;
+    background-color: #ccc;
+    width: 25%;
+    padding: 15px;
+    right: 75px;
+    bottom: 0px;
+    border-radius: 35px 35px 0 0;
+    box-shadow: 0 0 8px 1px #222;
+}
+
+.why h4{
+    font-family: 'Poppins', sans-serif;
+    text-align: center;
+    margin-bottom: 15px;
+}
+
+.why p::first-letter{
+    font-size: 23px;
+}
+.why p{
+    width: 90%;
+    margin: auto;
+    line-height: 25px;
+}
+
+.why p span{
+    color: #5B0519;
+    text-decoration: underline;
+}
+
+.why-img{
+    text-align: center;
+    margin-top: 15px;
+}
+
+.why-img img{
+    width: 80px;
+    text-align: center;
+}
+
+/**************************/
+
+.imagen_1{
+    position: absolute;
+    width: 350px;
+    left: 450px;
+    top: 300px;
+    z-index: 1000;
+}
+
+.imagen_1 img{
+    position: relative;
+    z-index: 1000;
+    filter: brightness(.5);
+}
+
+.imagen_1 div{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    border: 5px solid #5B0519;
+    top: 40px;
+    left: -40px;
+}

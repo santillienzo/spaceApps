@@ -1,0 +1,168 @@
+.contacto{
+    height: 100vh;
+    background: rgb(0,0,0);
+    background: linear-gradient(255deg, rgba(0,0,0,1) 0%, rgba(51,51,51,1) 97%);
+    box-shadow: 25px 0 25px 1px #333;
+}
+
+.form_container{
+    width: 50%;
+    float: left;
+    height: calc(100% - 65px);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+
+.form_container p{
+    color: #fff;
+    text-align: center;
+    margin: 25px 0;
+}
+
+.form_container input, .form_container textarea, .form_container select{
+    display: block;
+    margin: auto;
+    width: 350px;
+    max-width: 350px;
+    min-width: 350px;
+    max-height: 212px;
+    padding: 5px;
+    background-color: transparent;
+    color: #fff;
+    border: none;
+    border-bottom: 1px solid #ccc;
+}
+
+.form_container select{
+    padding-left: 0;
+}
+
+.form_container input::placeholder, .form_container textarea::placeholder{
+    color: #ccc;
+}
+
+.form_container input:focus, .form_container textarea:focus, .form_container select:focus{
+    outline: none;
+}
+
+.form_container option{
+    color: #333;
+}
+
+.form_container button{
+    display: block;
+    width: 150px;
+    margin: auto;
+    margin-top: 15px;
+    border-radius: 15px;
+    padding: 5px;
+    border: none;
+    box-shadow: 0 0 1px 1px #efefef;
+    cursor: pointer;
+}
+
+.form_container button:focus{
+    outline: none;
+}
+
+.form_container button:hover{
+    background-color: transparent;
+    color: #efefef;
+    transition: .3s;
+}
+
+/********************/
+
+.ayuda_contacto{
+    color: #fff;
+    width: 50%;
+    float: right;
+    margin-top: 50px;
+}
+
+
+.email_img{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+.email_img img{
+    width: 75px;
+    filter: invert(100%);
+}
+
+.ayuda_contacto p{
+    width: 70%;
+    margin: auto;
+    margin-top: 25px;
+    text-align: center;
+}
+
+/*******************************/
+
+.redes_sociales{
+    float: left;
+    color: #fff;
+    width: 50%;
+    height: 200px;
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    
+}
+
+.redes_sociales ul{
+    position: relative;
+    display: flex;
+    z-index: 2;
+}
+
+.redes_sociales ul li{
+    position: relative;
+    margin: 10px;
+}
+
+.redes_sociales ul li a{
+    position: relative;
+    width: 80px;
+    height: 80px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #fff;
+    font-size: 2em ;
+    border-radius: 10px;
+    border: 1px solid rgba(255,255,255,.4);
+    border-right: 1px solid rgba(255,255,255,.4);
+    border-bottom: 1px solid rgba(255,255,255,.4);
+    box-shadow: 0 5px 45px rgba(0,0,0,0.1);
+    backdrop-filter: blur(2px);
+    transition: 0.5s;
+    overflow: hidden;
+}
+
+.redes_sociales ul li a:hover{
+    transform: translateY(-20px);
+}
+
+
+.redes_sociales ul li a::before{
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 50px;
+    height: 100%;
+    background: rgba(255,255,255,0.5);
+    transform: skewX(45deg) translateX(150px);
+    transition: 1s;
+
+}
+
+.redes_sociales ul li a:hover::before{
+    transform: skewX(45deg) translateX(-150px);
+}
+

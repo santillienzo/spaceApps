@@ -1,0 +1,52 @@
+/***************** PORTAFOLIO **************************/
+
+.portafolio{
+    height: 100vh;
+    background: rgb(0,0,0);
+    background: linear-gradient(255deg, rgba(0,0,0,1) 0%, rgba(51,51,51,1) 97%);
+    box-shadow: 25px 0 25px 1px #333;
+}
+
+
+
+.portafolio-proyectos{
+    width: 85%;
+    margin: auto;
+    margin-top: 25px;
+    display: table;
+    text-align: center;
+}
+
+.proyecto{
+    display: inline-table;
+    width: 250px;
+    height: 250px;
+    position: relative;
+    background-color: green;
+    margin: 5px;
+}
+
+.proyecto_tapa{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    cursor: pointer;
+}
+
+.proyecto:hover .proyecto_tapa{
+    display: none;
+}
+
+.proyecto_fondo{
+    width: 250px;
+    height: 250px;
+    background-color: red;
+    display: flex;
+    align-items: center;
+}
+
+.proyecto_fondo img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
