@@ -21,7 +21,7 @@
 <body>
     <?php require 'partials/nav.php';?>
     <article>
-        <section class="welcome-container">
+        <section class="welcome-container" id="home">
             <div class="encabezado">
                 <h2>La vida con una Web es más fácil.</h2>
                 <p>Por eso Space te la diseña a tu medida.</p>

@@ -1,119 +1,313 @@
 .about_us-container{
     position: relative;
-    height: 100vh;
     background: rgb(0,0,0);
     background: linear-gradient(255deg, rgba(0,0,0,1) 0%, rgba(51,51,51,1) 97%);
     box-shadow: 25px 0 25px 1px #333;
 }
 
 /***************** SOBRE NOSOTROS **************************/
-.about_us{
-    position: absolute;
-    background-color: #ccc;
-    width: 25%;
-    padding: 15px;
-    left: 75px;
-    top: -4px;
-    border-radius: 0 0 35px 35px;
-    box-shadow: 0 0 8px 1px #222;
+
+.informacion-container{
+    color: #fff;
+    width: 100%;
+    margin-top: 25px;
+}
+/***************/
+.about_us-block{
+    display: flex;
 }
 
+.about_us{
+    width: 50%;
+    margin-left: 35px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
 
 .about_us h4{
-    font-family: 'Poppins', sans-serif;
-    text-align: center;
-    margin-bottom: 15px;
+    position: relative;
 }
 
-.about_us p::first-letter{
-    font-size: 23px;
-}
+
 .about_us p{
-    width: 90%;
-    margin: auto;
-    line-height: 25px;
-}
-
-.about_us p span{
-    color: #5B0519;
-    text-decoration: underline;
-}
-
-.about_us-img{
-    text-align: center;
     margin-top: 15px;
+    line-height: 20px;
 }
-
-.about_us-img img{
-    width: 100px;
-    text-align: center;
-    border-radius: 50px;
-}
-
-/*****************************/
-
-.why{
-    position: absolute;
-    background-color: #ccc;
-    width: 25%;
-    padding: 15px;
-    right: 75px;
-    bottom: 0px;
-    border-radius: 35px 35px 0 0;
-    box-shadow: 0 0 8px 1px #222;
-}
-
-.why h4{
-    font-family: 'Poppins', sans-serif;
-    text-align: center;
-    margin-bottom: 15px;
-}
-
-.why p::first-letter{
-    font-size: 23px;
-}
-.why p{
-    width: 90%;
-    margin: auto;
-    line-height: 25px;
-}
-
-.why p span{
-    color: #5B0519;
-    text-decoration: underline;
-}
-
-.why-img{
-    text-align: center;
-    margin-top: 15px;
-}
-
-.why-img img{
-    width: 80px;
-    text-align: center;
-}
-
-/**************************/
 
 .imagen_1{
-    position: absolute;
-    width: 350px;
-    left: 450px;
-    top: 300px;
-    z-index: 1000;
+    width: 50%;
+    display: flex;
+    justify-content: center;
 }
 
 .imagen_1 img{
-    position: relative;
-    z-index: 1000;
-    filter: brightness(.5);
+    width: 85%;
 }
 
-.imagen_1 div{
-    position: absolute;
+/*************/
+
+
+
+.why-block{
+    display: flex;
+    margin-top: 35px;
+}
+
+.why{
+    width: 60%;
+    margin-left: 35px;
+    margin-right: 35px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.why .text{
+    margin-top: 15px;
+}
+
+.why .text p{
+    margin-bottom: 10px;
+    line-height: 20px;
+
+}
+
+.imagen_2{
+    margin-left: 35px;
+    width: 40%;
+}
+
+.imagen_2 img{
     width: 100%;
-    height: 100%;
-    border: 5px solid #5B0519;
-    top: 40px;
-    left: -40px;
+}
+
+
+/************/
+
+.goals-block{
+    display: flex;
+    margin-top: 35px;
+
+}
+
+.goals{
+    width: 50%;
+    margin-left: 35px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.goals .text{
+    margin-top: 15px;
+}
+
+.goals .text p{
+    margin-bottom: 10px;
+    line-height: 20px;
+
+}
+
+.imagen_3{
+    width: 50%;
+    display: flex;
+    justify-content: center;
+}
+
+.imagen_3 img{
+    width: 50%;
+    filter: brightness(.85);
+}
+
+
+/******************/
+
+
+.read_container{
+    width: 100%;
+    text-align: center;
+    padding-bottom: 35px;
+}
+.read_more{
+    display: inline-block;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    color: #ccc;
+    font-size: 20px;
+    transition: .5s;
+
+}
+
+.read_more:hover{
+    background-color: #ccc;
+    color: #000;
+    transition: .5s;
+}
+
+
+
+/********************  RESPONSIVE  *******************/
+
+
+
+
+
+
+
+
+
+
+@media screen and (min-width:200px) and (max-width:700px){
+    /*********************/
+    .about_us-block{
+        display: inline-block;
+        width: 100%;
+        text-align: center;
+        margin-top: 25px;
+    }
+
+    .about_us{
+        width: 90%;
+        margin: auto;
+        display: inline-block;
+    }
+
+    .about_us h4{
+        position: relative;
+        font-size: 25px;
+    }
+
+
+    .about_us p{
+        margin-top: 15px;
+        line-height: 20px;
+        font-size: 18px;
+    }
+
+    .imagen_1{
+        width: 100%;
+        display: inline-block;
+        margin-top: 25px;
+    }
+
+    .imagen_1 img{
+        width: 85%;
+        border-radius: 25px;
+    }
+
+    /*************/
+
+
+
+    .why-block{
+        display: flex;
+        flex-direction: column-reverse;
+        align-items: center;
+        width: 100%;
+        text-align: center;
+        margin-top: 55px;
+    }
+
+    .why{
+        width: 90%;
+        margin: auto;
+        display: inline-block;
+    }
+
+    .why h4{
+        font-size: 25px;
+    }
+
+    .why .text{
+        margin-top: 15px;
+    }
+
+    .why .text p{
+        margin-bottom: 10px;
+        line-height: 20px;
+        font-size: 18px;
+
+    }
+
+    .imagen_2{
+        margin-left: 0px;
+        width: 100%;
+        margin-top: 25px;
+    }
+
+    .imagen_2 img{
+        width: 85%;
+        border-radius: 25px;
+    }
+
+    /************/
+
+    .goals-block{
+        display: inline-block;
+        width: 100%;
+        text-align: center;
+        margin-top: 55px;
+    }
+
+    .goals{
+        width: 90%;
+        margin: auto;
+        display: inline-block;
+    }
+
+    .goals h4{
+        font-size: 25px;
+    }
+
+    .goals .text{
+        margin-top: 15px;
+    }
+
+    .goals .text p{
+        margin-bottom: 10px;
+        line-height: 20px;
+        font-size: 18px;
+
+    }
+
+    .imagen_3{
+        margin-left: 0px;
+        width: 100%;
+        margin-top: 25px;
+    }
+
+    .imagen_3 img{
+        width: 55%;
+        border-radius: 25px;
+        filter: brightness(.85);
+    }
+
+
+    /******************/
+
+
+    .read_container{
+        width: 100%;
+        text-align: center;
+        padding-bottom: 35px;
+        margin-top: 55px;
+    }
+    .read_more{
+        display: inline-block;
+        padding: 15px;
+        border: 1px solid #ccc;
+        border-radius: 10px;
+        color: #ccc;
+        font-size: 25px;
+        transition: .5s;
+
+    }
+
+    .read_more:active{
+        background-color: #ccc;
+        color: #000;
+        transition: .5s;
+    }
 }

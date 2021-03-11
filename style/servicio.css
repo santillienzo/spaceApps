@@ -35,9 +35,8 @@
     filter: invert(100%);
 }
 
-.img_service img:hover{
-    animation: iconos .8s linear normal forwards;
-    animation-play-state: running;
+.card-contain:hover .img_service img{
+    animation: iconos .5s linear normal forwards;
 }
 
 @keyframes iconos{
@@ -59,5 +58,171 @@
 
     100%{
         transform: rotateZ(0deg);
+    }
+}
+
+.info_service p{
+    margin-top: 8px;
+    line-height: 20px;
+}
+
+.aviso-respon{
+    display: none;
+}
+
+/**************modales*******************/
+@media screen and (min-width:700px){
+    .modal_service{
+        display: none !important;
+    }
+}
+
+
+
+@media screen and (min-width:200px) and (max-width:700px){
+
+    .servicio{
+        position: relative;
+        height: fit-content;
+        background: rgb(0,0,0);
+        background: linear-gradient(255deg, rgba(0,0,0,1) 0%, rgba(51,51,51,1) 97%);
+        box-shadow: 25px 0 25px 1px #333;
+    }
+    
+    .service-container{
+        background-color: re;
+        width: 100%;
+        margin: auto;
+        display: inline-block;
+    }
+    
+    .card-service{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin: 55px 0;
+    }
+    
+    .card-contain{
+        text-align: center;
+        color: #fff;
+    }
+    
+    
+    .card-service .img_service{
+        width: 100%;
+    }
+    
+    .img_service img{
+        width: 60px;
+        filter: invert(100%);
+    }
+    
+    .card-contain:hover .img_service img{
+        animation: iconos .5s linear normal forwards;
+    }
+
+    .info_service h5{
+        font-size: 17px;
+    }
+
+    .info_service p{
+        display: none;
+    }
+
+    .aviso-respon{
+        color: #fff;
+        width: 100%;
+        margin-top: 35px;
+        display: flex;
+        justify-content: center;
+    }
+    
+    .aviso-respon p{
+        display: inline-block;
+        width: fit-content;
+        padding: 15px;
+        border: 1px solid #ccc;
+    }
+
+/**************modales*******************/
+
+
+    .modal_service{
+        display: none;
+        position: fixed;
+        top: 0;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        width: 80%;
+        height: fit-content;
+        max-height: 80%;
+        margin: auto;
+        background-color: #ccc;
+        z-index: 88888888;
+        border-radius: 25px;
+        border-left: 25px solid #333;
+    }
+
+    .modal-contain{
+        padding: 35px 15px;
+    }
+
+    .modal_img_service{
+        width: 30%;
+        margin: auto;
+    }
+
+    .modal_info_service{
+        text-align: center;
+        width: 80%;
+        margin: auto;
+    }
+
+    .modal_info_service h5{
+        font-size: 25px;
+    }
+
+    .modal_info_service p{
+        margin-top: 35px;
+        font-size: 20px;
+    }
+
+    .modal_service-container{
+        display: none;
+        position: fixed;
+        width: 100vw;
+        height: 100vh;
+        top: 0;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        background-color: #fff;
+        opacity: .4;
+        z-index: 5555;
+    }
+
+}
+
+
+@keyframes abrirModalService{
+    0%{
+        opacity: 0;
+    }
+
+    100%{
+        opacity: 1;
+    }
+}
+
+
+@keyframes abrirModalcontainer{
+    0%{
+        opacity: 0;
+    }
+
+    100%{
+        opacity: .4;
     }
 }

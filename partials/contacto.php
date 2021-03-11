@@ -1,9 +1,12 @@
-<section class="contacto">
+<section class="contacto" id="contact">
     <div class="title">
         <h3>CONTACTO</h3>
     </div>
     <div class="form_container">
         <form action="">
+            <div class="sobre_img">
+                <img src="Images/decoracion/sobre.png" alt="">
+            </div>
             <p>Información sobre tu sitio</p>
             <input type="text" placeholder="Nombre">
             <select name="" id="">
@@ -32,11 +35,11 @@
     </div>
     <div class="redes_sociales">
         <ul>
-            <li><a href=""><i class="fab fa-whatsapp"></i></a></li>
+            <li><a href="https://wa.me/542634786580"><i class="fab fa-whatsapp"></i></a></li>
             <li><a href="https://www.facebook.com/spaceappsdev"><i class="fab fa-facebook-f"></a></i></li>
             <li><a href="https://www.instagram.com/spaceappsdev/?hl=es-la"><i class="fab fa-instagram"></a></i></li>
             <li><a href="https://twitter.com/spaceappsdev"><i class="fab fa-twitter"></a></i></li>
-            <li><a href=""><i class="fab fa-youtube"></a></i></li>
+            <li><a href="https://www.youtube.com/channel/UCF3KM2RqfJmg-bJLQoOTMuQ"><i class="fab fa-youtube"></a></i></li>
         </ul>
     </div>
 </section>
