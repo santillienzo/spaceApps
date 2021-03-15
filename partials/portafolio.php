@@ -19,41 +19,18 @@
             </a>
         </div>
         <div class="proyecto">
-            <a href="https://www.glowstore.com.ar" target="_BLANK">
+            <a href="https://www.spaceapps.com.ar" target="_BLANK">
             <div class="flipcard">
                 <div class="front">
-                    <img src="Images/portafolio/logo_prueba_1.jpg" alt="">
+                    <img src="Images/portafolio/space/logo_completo.jpg" alt="">
                 </div>
                 <div class="back">
-                    <img src="Images/portafolio/glow/2021-03-01_02h22_34.png" alt="">
+                    <img src="Images/portafolio/space/space_pag.png" alt="">
                 </div>
             </div>
             </a>
         </div>
-        <div class="proyecto">
-            <a href="https://www.glowstore.com.ar" target="_BLANK">
-            <div class="flipcard">
-                <div class="front">
-                    <img src="Images/portafolio/logo_prueba2.jpg" alt="">
-                </div>
-                <div class="back">
-                    <img src="Images/portafolio/glow/2021-03-01_02h22_34.png" alt="">
-                </div>
-            </div>
-            </a>
-        </div>
-        <div class="proyecto">
-            <a href="https://www.glowstore.com.ar" target="_BLANK">
-            <div class="flipcard">
-                <div class="front">
-                    <img src="Images/portafolio/logo_prueba3.jpg" alt="">
-                </div>
-                <div class="back">
-                    <img src="Images/portafolio/glow/2021-03-01_02h22_34.png" alt="">
-                </div>
-            </div>
-            </a>
-        </div>
+        
 
         
     </div>

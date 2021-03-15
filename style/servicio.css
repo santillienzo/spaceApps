@@ -132,13 +132,15 @@
 
     .aviso-respon{
         color: #fff;
-        width: 100%;
+        width: 95%;
+        margin: auto;
         margin-top: 35px;
         display: flex;
         justify-content: center;
     }
     
     .aviso-respon p{
+        text-align: center;
         display: inline-block;
         width: fit-content;
         padding: 15px;
@@ -202,6 +204,17 @@
         opacity: .4;
         z-index: 5555;
     }
+
+    @-moz-document url-prefix() {
+        .servicio{
+            position: relative;
+            height: min-content;
+            background: rgb(0,0,0);
+            background: linear-gradient(255deg, rgba(0,0,0,1) 0%, rgba(51,51,51,1) 97%);
+            box-shadow: 25px 0 25px 1px #333;
+        }
+    }
+    
 
 }
 

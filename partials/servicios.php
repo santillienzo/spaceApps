@@ -60,7 +60,7 @@
     </div>
     <div class="service-container">
         <div class="aviso-respon">
-            <p >Pulsa sobre alguno de ellos.</p>
+            <p>Para más información pulsa sobre alguno de ellos.</p>
         </div>
         <div class="card-service" id="design">
             <div class="card-contain">

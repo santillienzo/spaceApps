@@ -10,6 +10,20 @@ window.addEventListener("scroll",function(){
     
 });
 
+
+//ANIMACIÓN PARA OCULTAR EL MENÚ RESPONSIVE
+
+var ubicacionPrincipal = window.pageYOffset;
+window.onscroll = function(){
+    let dezplazamiento  = window.pageYOffset;
+    if (ubicacionPrincipal >= dezplazamiento) {
+        document.getElementById("nav_responsive").style.animation = "visibleMenuRes .5s ease forwards";
+    }else{
+        document.getElementById("nav_responsive").style.animation = "hideMenuRes .5s ease forwards";
+    }
+    ubicacionPrincipal = dezplazamiento
+}
+
 // *****************************
 //ABRIR Y CERRAR MENÚ RESPONSIVE
 // *****************************

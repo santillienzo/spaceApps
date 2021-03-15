@@ -5,13 +5,13 @@ if(portafolio.offsetHeight >= 500){
     verMas.style.display = "flex";
     verMas.addEventListener("click",()=>{
         verMas.style.display = "none";
-        portafolio.style.maxHeight = "fit-content";
+        portafolio.style.maxHeight = "min-content";
     });
 }
 else if(portafolio.style.pixelHeight >= 500){
     verMas.style.display = "flex";
     verMas.addEventListener("click",()=>{
         verMas.style.display = "none";
-        portafolio.style.maxHeight = "fit-content";
+        portafolio.style.maxHeight = "min-content";
     });
 }

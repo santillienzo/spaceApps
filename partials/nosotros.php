@@ -40,8 +40,8 @@
         </div>
     </div>
 
-    <div class="read_container">
+    <!-- <div class="read_container">
         <a href="" class="read_more">Leer más</a>
-    </div>
+    </div> -->
         
 </section>

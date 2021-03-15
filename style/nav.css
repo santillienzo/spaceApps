@@ -39,11 +39,11 @@ header{
     color: #fff;
     width: 100%;
     z-index: 100;
-    margin-top: 15px;
 }
 
 .header-container{
     width: 70%;
+    padding-top: 15px;
     margin: auto;
     display: flex;
     justify-content: space-between;
@@ -101,7 +101,7 @@ header{
 
 
 .visible{
-    min-height: 35px;
+    min-height:65px;
 }
 
 .visible:hover .hide{
@@ -149,6 +149,10 @@ header{
     display: none;
 }
 
+.menu_responsive{
+    display: none;
+}
+
 
 
 
@@ -183,7 +187,6 @@ header{
         height: 100vh;
         background-color: #fff;
         opacity: 0;
-        margin-top: -15px;
         z-index: 50;
     }
     
@@ -217,15 +220,15 @@ header{
         position: fixed;
         width: 100vw;
         height: 100vh;
-        margin-top: -15px;
-        z-index: 40;
+        z-index: 400;
+        color: #fff;
     }
 
     .menu_res-container{
         display: none;
         width: 80%;
         background-color: #333;
-        height: 100%;
+        height: 100vh;
         border-left: 3px solid #fff;
         z-index: 60;
         margin-right: 0%;
@@ -246,7 +249,7 @@ header{
     }
 
     .menu_res-container ul{
-        height: fit-content;
+        height: min-content;
         text-align: center;
         border-top: 1px solid #ccc;
     }
@@ -273,6 +276,7 @@ header{
 
         100%{
             margin-right: 0%;
+            
         }
     }
 
@@ -293,6 +297,27 @@ header{
 
         100%{
             opacity: .5;
+        }
+    }
+
+
+    @keyframes hideMenuRes {
+        0%{
+            margin-top: 0%;
+        }
+
+        100%{
+            margin-top: -100%;
+        }
+    }
+
+    @keyframes visibleMenuRes {
+        0%{
+            margin-top: -100%;
+        }
+
+        100%{
+            margin-top: 0%;
         }
     }
 }

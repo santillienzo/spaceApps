@@ -15,7 +15,7 @@ body{
     font-size: 20px;
     letter-spacing: 10px;
     position: relative;
-    width: fit-content;
+    width: max-content;
 }
 
 .title h3::before{
@@ -63,6 +63,18 @@ body{
 
 .encabezado h2, .encabezado p{
     font-family: 'Poppins', sans-serif;
+}
+
+
+
+footer{
+    background-color: #333;
+    padding: 15px;
+    color: #fff;
+}
+
+footer a{
+    color: #cc808d;
 }
 
 
